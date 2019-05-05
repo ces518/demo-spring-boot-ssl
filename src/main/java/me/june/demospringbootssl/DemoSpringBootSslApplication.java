@@ -14,16 +14,16 @@ public class DemoSpringBootSslApplication {
         SpringApplication.run(DemoSpringBootSslApplication.class, args);
     }
 
-    @Bean
-    public ServletWebServerFactory servletWebServerFactory () {
-        TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
-        tomcat.addAdditionalTomcatConnectors(createStandardConnector());
-        return tomcat;
-    }
-
-    private Connector createStandardConnector() {
-        Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
-        connector.setPort(8080);
-        return connector;
-    }
+//    @Bean
+//    public ServletWebServerFactory servletWebServerFactory () {
+//        TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
+//        tomcat.addAdditionalTomcatConnectors(createStandardConnector());
+//        return tomcat;
+//    }
+//
+//    private Connector createStandardConnector() {
+//        Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
+//        connector.setPort(8080);
+//        return connector;
+//    }
 }
